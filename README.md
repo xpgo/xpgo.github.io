@@ -1,5 +1,5 @@
-# boyuanitsm.github.io
+# xpgo.github.io
 
-Boyuan Open Source WebSite
+XPGO's Space
 
 powerd by [airspace-jekyll](https://github.com/luminousrubyist/airspace-jekyll)

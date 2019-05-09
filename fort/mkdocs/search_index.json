@@ -1,0 +1,169 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Fort\n\n\nView Demo\n\n\n\u7b80\u4ecb\n\n\nFort \u662f\u4e00\u4e2a\u516c\u5171\u5b89\u5168\u5e73\u53f0\uff0c\u7528\u4e8e\u5b89\u5168\u8bbf\u95ee\u4f60\u7684Java\u5e94\u7528\uff0c\u662f\u57fa\u4e8eSpring4\u5f00\u53d1\u7684\u5e94\u7528\u7a0b\u5e8f\n\n\n\u7279\u70b9\n\n\n\n\n\u5168\u9762\u7684\u8eab\u4efd\u9a8c\u8bc1\u548c\u6388\u6743\n\n\n\u5f3a\u5927\u7684\u7ba1\u7406\u540e\u53f0\n\n\n\u5feb\u901f\u96c6\u6210\uff0c\u65e0\u9700\u7406\u4f1a\u6301\u4e45\u5c42\n\n\n\u7f13\u5b58\u66f4\u65b0\u670d\u52a1\n\n\n\n\n\u96c6\u6210\u6d41\u7a0b\u56fe\n\n\n\n\n\u5e73\u53f0\u67b6\u6784\n\n\n\n\n\u6700\u4f4e\u8981\u6c42\n\n\n\n\njdk 7+\n\n\nspring 4.2.5.RELEASE+\n\n\n\n\n\u524d\u671f\u5de5\u4f5c\n\n\n\n\n\u6d4b\u8bd5Fort\u540e\u53f0\u7ba1\u7406\u5730\u5740 \nhttp://180.167.77.60:30002\n\n\n\u672c\u6587\u6863\u5f88\u591a\u5730\u65b9\u548cfort.yml\u4e2d\u7684\u914d\u7f6e\u6709\u5173\uff0c\u548c\u914d\u7f6e\u6709\u5173\u7684\u5730\u65b9\u4f7f\u7528$\u7b26\u53f7\u6807\u8bc6\n\n\n\n\n\u521b\u5efa\u5e94\u7528\n\n\n\u767b\u5f55\u540e\u53f0\u7ba1\u7406\uff0c\u521b\u5efa\u7b2c\u4e00\u4e2a\u5e94\u7528\u3002\n\n\nMaven POM\n\n\n\u4f7f\u7528\u4e4b\u524d\u5fc5\u987b\n\u914d\u7f6eMaven\u79c1\u670d\n\n\nfort.sdk.version \u5217\u8868\n\n\ndependency\n\n    \ngroupId\ncom.boyuanitsm\n/groupId\n\n    \nartifactId\nfort-sdk\n/artifactId\n\n    \nversion\n${fort.sdk.version}\n/version\n\n\n/dependency\n\n\n\n\n\n\u914d\u7f6eFort\n\n\nSpring component scan\n\n\n\u7531\u4e8eSDK\u662f\u57fa\u4e8eSpring4\u5f00\u53d1\u5e76\u4f7f\u7528Spring Bean\u7ba1\u7406\u5bf9\u8c61\uff0c\u5f00\u542f\u6ce8\u89e3\u626b\u63cf\n\n\n\u5728Spring application.xml\u52a0\u5165\uff1a\n\n\ncontext:component-scan base-package=\ncom.boyuanitsm.fort.sdk\n/\n\n\n\n\n\nFort security http filter\n\n\n\u914d\u7f6e\u5b89\u5168Http\u8fc7\u6ee4\u5668\uff0c\u8fd9\u4e2a\u8fc7\u6ee4\u5668\u7684\u529f\u80fd\u662f\uff1a\n\n\n\n\n\u8fc7\u6ee4\u8bf7\u6c42\uff0c\u8fbe\u5230\u6743\u9650\u63a7\u5236\u7684\u76ee\u7684\n\n\n\u5904\u7406\u767b\u5f55\u767b\u51fa\u8bf7\u6c42\n\n\n\n\n\u5728\u9879\u76ee\u7684web.xml\u52a0\u5165\uff1a\n\n\nfilter\n  \n    \nfilter-name\nsecurityHttpFilter\n/filter-name\n  \n    \nfilter-class\norg.springframework.web.filter.DelegatingFilterProxy\n/filter-class\n  \n\n/filter\n\n\nfilter-mapping\n   \n    \nfilter-name\nsecurityHttpFilter\n/filter-name\n   \n    \nurl-pattern\n/*\n/url-pattern\n   \n\n/filter-mapping\n\n\n\n\n\nfort.yml\n\n\nFort SDK \u7684\u914d\u7f6e\u6587\u4ef6\uff0c\u4ee5maven\u9879\u76ee\u4e3a\u4f8b\uff0c\u5c06fort.yml\u653e\u7f6e\u5728src/main/resource/\u76ee\u5f55\u5185\n\n\n# ===================================================================\n# Fort SDK configuration\n# ===================================================================\n\nfort:\n    # \u5e94\u7528\u6a21\u5757\n    app:\n        # fort server \u7684\u57fa\u7840url\n        server-base: http://172.16.8.21:9800\n        # \u5e94\u7528 key\n        app-key: zwecds24bjmm\n        # \u5e94\u7528 secret\n        app-secret: b6yulgieomdu\n    # \u8d44\u6e90\u540c\u6b65\u670d\u52a1\n    resource-sync:\n        # \u662f\u5426\u542f\u7528\n        enable: true\n    # \u8eab\u4efd\u9a8c\u8bc1\u6a21\u5757\n    authentication:\n        # \u7528\u6237\u6ca1\u6709\u6743\u9650\u8bbf\u95ee\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740\n        unauthorized-return: /unauthorized.html\n        # \u767b\u5f55\n        login:\n            # \u767b\u5f55URL, \u767b\u5f55\u65f6\u53d1\u9001POST\u8bf7\u6c42\u5230\u8fd9\u4e2a\u5730\u5740, \u7528\u6237\u540d\u7684\u53c2\u6570\u540d\u4e3af_username, \u5bc6\u7801\u7684\u53c2\u6570\u540d\u4e3af_password\n            url: /fort/login\n            # \u767b\u5f55\u6210\u529f\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n            success-return: /\n            # \u767b\u5f55\u5931\u8d25\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001error_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n            error-return: /login.jsp?error=1\n            # \u767b\u5f55\u9875\u9762\u5730\u5740\n            login-view: /login.jsp\n        # \u767b\u51fa\n        logout:\n            # \u767b\u51faURL\n            url: /fort/logout\n            # \u767b\u51fa\u6210\u529f\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740, \u767b\u51fa\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n            success-return: /\n    # \u7528\u6237\u6a21\u5757\n    user:\n        # \u521b\u5efa\u65b0\u7528\u6237\u65f6\uff0c\u7528\u6237\u62e5\u6709\u7684\u89d2\u8272\u540d\n        default-roles:\n            - ROLE_USER\n        # \u521b\u5efa\u65b0\u7528\u6237\u65f6\uff0c\u7528\u6237\u6240\u5c5e\u7ec4\u540d\n        default-groups:\n            - WORK_GROUP\n    # Cookie \u6a21\u5757\n    cookie:\n        # cookie\u7684\u57df,\u53ef\u4ee5\u4f7f\u591a\u4e2aweb\u670d\u52a1\u5668\u5171\u4eabcookie,\u5982\u679c\u9519\u8bef\u8bbe\u7f6edomain\u53ef\u80fd\u4f1a\u5bfc\u81f4fort\u5931\u6548!\n        domain: localhost\n        # cookie \u6709\u6548\u671f, \u5929, \u5e94\u4e0e\u5e94\u7528\u7684\u4f1a\u8bdd\u65f6\u95f4\u76f8\u540c\n        max-age: 7\n    # \u4e0d\u9700\u8981\u8fc7\u6ee4\u7684\u8d44\u6e90\n    ignores:\n        - /*/*.jpg\n        - /*/*.png\n        - /*/*.gif\n        - /*/*.css\n        - /*/*.js\n\n\n\n\n\u542f\u52a8\n\n\n\u81f3\u6b64\u5df2\u5c06Fort SDK\u96c6\u6210\u5230\u60a8\u7684Java\u5e94\u7528\u4e2d\uff0c\u53ef\u4ee5\u542f\u52a8\u4e86\uff0c\u5982\u679c\u96c6\u6210\u6210\u529f\u4f1a\u5728\u63a7\u5236\u53f0\u6253\u5370\u51fa\u65e5\u5fd7\n\n\nStarting fort\nStarted fort in 576 ms\nConnection fort resource synchronize service success!\n\n\n\n\n\u9700\u8981\u5e2e\u52a9\n\n\n\u9047\u5230\u95ee\u9898\u53ef\u4ee5\u5230GitLab\u4e0a\u63d0issue\uff0c\u94fe\u63a5\u5730\u5740\uff1a\nhttp://180.167.77.60:30002/ppd/fort-sdk/issues", 
+            "title": "\u9996\u9875"
+        }, 
+        {
+            "location": "/#fort", 
+            "text": "View Demo", 
+            "title": "Fort"
+        }, 
+        {
+            "location": "/#_1", 
+            "text": "Fort \u662f\u4e00\u4e2a\u516c\u5171\u5b89\u5168\u5e73\u53f0\uff0c\u7528\u4e8e\u5b89\u5168\u8bbf\u95ee\u4f60\u7684Java\u5e94\u7528\uff0c\u662f\u57fa\u4e8eSpring4\u5f00\u53d1\u7684\u5e94\u7528\u7a0b\u5e8f", 
+            "title": "\u7b80\u4ecb"
+        }, 
+        {
+            "location": "/#_2", 
+            "text": "\u5168\u9762\u7684\u8eab\u4efd\u9a8c\u8bc1\u548c\u6388\u6743  \u5f3a\u5927\u7684\u7ba1\u7406\u540e\u53f0  \u5feb\u901f\u96c6\u6210\uff0c\u65e0\u9700\u7406\u4f1a\u6301\u4e45\u5c42  \u7f13\u5b58\u66f4\u65b0\u670d\u52a1", 
+            "title": "\u7279\u70b9"
+        }, 
+        {
+            "location": "/#_3", 
+            "text": "", 
+            "title": "\u96c6\u6210\u6d41\u7a0b\u56fe"
+        }, 
+        {
+            "location": "/#_4", 
+            "text": "", 
+            "title": "\u5e73\u53f0\u67b6\u6784"
+        }, 
+        {
+            "location": "/#_5", 
+            "text": "jdk 7+  spring 4.2.5.RELEASE+", 
+            "title": "\u6700\u4f4e\u8981\u6c42"
+        }, 
+        {
+            "location": "/#_6", 
+            "text": "\u6d4b\u8bd5Fort\u540e\u53f0\u7ba1\u7406\u5730\u5740  http://180.167.77.60:30002  \u672c\u6587\u6863\u5f88\u591a\u5730\u65b9\u548cfort.yml\u4e2d\u7684\u914d\u7f6e\u6709\u5173\uff0c\u548c\u914d\u7f6e\u6709\u5173\u7684\u5730\u65b9\u4f7f\u7528$\u7b26\u53f7\u6807\u8bc6", 
+            "title": "\u524d\u671f\u5de5\u4f5c"
+        }, 
+        {
+            "location": "/#_7", 
+            "text": "\u767b\u5f55\u540e\u53f0\u7ba1\u7406\uff0c\u521b\u5efa\u7b2c\u4e00\u4e2a\u5e94\u7528\u3002", 
+            "title": "\u521b\u5efa\u5e94\u7528"
+        }, 
+        {
+            "location": "/#maven-pom", 
+            "text": "\u4f7f\u7528\u4e4b\u524d\u5fc5\u987b \u914d\u7f6eMaven\u79c1\u670d  fort.sdk.version \u5217\u8868  dependency \n     groupId com.boyuanitsm /groupId \n     artifactId fort-sdk /artifactId \n     version ${fort.sdk.version} /version  /dependency", 
+            "title": "Maven POM"
+        }, 
+        {
+            "location": "/#fort_1", 
+            "text": "", 
+            "title": "\u914d\u7f6eFort"
+        }, 
+        {
+            "location": "/#spring-component-scan", 
+            "text": "\u7531\u4e8eSDK\u662f\u57fa\u4e8eSpring4\u5f00\u53d1\u5e76\u4f7f\u7528Spring Bean\u7ba1\u7406\u5bf9\u8c61\uff0c\u5f00\u542f\u6ce8\u89e3\u626b\u63cf  \u5728Spring application.xml\u52a0\u5165\uff1a  context:component-scan base-package= com.boyuanitsm.fort.sdk /", 
+            "title": "Spring component scan"
+        }, 
+        {
+            "location": "/#fort-security-http-filter", 
+            "text": "\u914d\u7f6e\u5b89\u5168Http\u8fc7\u6ee4\u5668\uff0c\u8fd9\u4e2a\u8fc7\u6ee4\u5668\u7684\u529f\u80fd\u662f\uff1a   \u8fc7\u6ee4\u8bf7\u6c42\uff0c\u8fbe\u5230\u6743\u9650\u63a7\u5236\u7684\u76ee\u7684  \u5904\u7406\u767b\u5f55\u767b\u51fa\u8bf7\u6c42   \u5728\u9879\u76ee\u7684web.xml\u52a0\u5165\uff1a  filter   \n     filter-name securityHttpFilter /filter-name   \n     filter-class org.springframework.web.filter.DelegatingFilterProxy /filter-class    /filter  filter-mapping    \n     filter-name securityHttpFilter /filter-name    \n     url-pattern /* /url-pattern     /filter-mapping", 
+            "title": "Fort security http filter"
+        }, 
+        {
+            "location": "/#fortyml", 
+            "text": "Fort SDK \u7684\u914d\u7f6e\u6587\u4ef6\uff0c\u4ee5maven\u9879\u76ee\u4e3a\u4f8b\uff0c\u5c06fort.yml\u653e\u7f6e\u5728src/main/resource/\u76ee\u5f55\u5185  # ===================================================================\n# Fort SDK configuration\n# ===================================================================\n\nfort:\n    # \u5e94\u7528\u6a21\u5757\n    app:\n        # fort server \u7684\u57fa\u7840url\n        server-base: http://172.16.8.21:9800\n        # \u5e94\u7528 key\n        app-key: zwecds24bjmm\n        # \u5e94\u7528 secret\n        app-secret: b6yulgieomdu\n    # \u8d44\u6e90\u540c\u6b65\u670d\u52a1\n    resource-sync:\n        # \u662f\u5426\u542f\u7528\n        enable: true\n    # \u8eab\u4efd\u9a8c\u8bc1\u6a21\u5757\n    authentication:\n        # \u7528\u6237\u6ca1\u6709\u6743\u9650\u8bbf\u95ee\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740\n        unauthorized-return: /unauthorized.html\n        # \u767b\u5f55\n        login:\n            # \u767b\u5f55URL, \u767b\u5f55\u65f6\u53d1\u9001POST\u8bf7\u6c42\u5230\u8fd9\u4e2a\u5730\u5740, \u7528\u6237\u540d\u7684\u53c2\u6570\u540d\u4e3af_username, \u5bc6\u7801\u7684\u53c2\u6570\u540d\u4e3af_password\n            url: /fort/login\n            # \u767b\u5f55\u6210\u529f\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n            success-return: /\n            # \u767b\u5f55\u5931\u8d25\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001error_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n            error-return: /login.jsp?error=1\n            # \u767b\u5f55\u9875\u9762\u5730\u5740\n            login-view: /login.jsp\n        # \u767b\u51fa\n        logout:\n            # \u767b\u51faURL\n            url: /fort/logout\n            # \u767b\u51fa\u6210\u529f\u65f6\uff0c\u91cd\u5b9a\u5411\u7684\u5730\u5740, \u767b\u51fa\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n            success-return: /\n    # \u7528\u6237\u6a21\u5757\n    user:\n        # \u521b\u5efa\u65b0\u7528\u6237\u65f6\uff0c\u7528\u6237\u62e5\u6709\u7684\u89d2\u8272\u540d\n        default-roles:\n            - ROLE_USER\n        # \u521b\u5efa\u65b0\u7528\u6237\u65f6\uff0c\u7528\u6237\u6240\u5c5e\u7ec4\u540d\n        default-groups:\n            - WORK_GROUP\n    # Cookie \u6a21\u5757\n    cookie:\n        # cookie\u7684\u57df,\u53ef\u4ee5\u4f7f\u591a\u4e2aweb\u670d\u52a1\u5668\u5171\u4eabcookie,\u5982\u679c\u9519\u8bef\u8bbe\u7f6edomain\u53ef\u80fd\u4f1a\u5bfc\u81f4fort\u5931\u6548!\n        domain: localhost\n        # cookie \u6709\u6548\u671f, \u5929, \u5e94\u4e0e\u5e94\u7528\u7684\u4f1a\u8bdd\u65f6\u95f4\u76f8\u540c\n        max-age: 7\n    # \u4e0d\u9700\u8981\u8fc7\u6ee4\u7684\u8d44\u6e90\n    ignores:\n        - /*/*.jpg\n        - /*/*.png\n        - /*/*.gif\n        - /*/*.css\n        - /*/*.js", 
+            "title": "fort.yml"
+        }, 
+        {
+            "location": "/#_8", 
+            "text": "\u81f3\u6b64\u5df2\u5c06Fort SDK\u96c6\u6210\u5230\u60a8\u7684Java\u5e94\u7528\u4e2d\uff0c\u53ef\u4ee5\u542f\u52a8\u4e86\uff0c\u5982\u679c\u96c6\u6210\u6210\u529f\u4f1a\u5728\u63a7\u5236\u53f0\u6253\u5370\u51fa\u65e5\u5fd7  Starting fort\nStarted fort in 576 ms\nConnection fort resource synchronize service success!", 
+            "title": "\u542f\u52a8"
+        }, 
+        {
+            "location": "/#_9", 
+            "text": "\u9047\u5230\u95ee\u9898\u53ef\u4ee5\u5230GitLab\u4e0a\u63d0issue\uff0c\u94fe\u63a5\u5730\u5740\uff1a http://180.167.77.60:30002/ppd/fort-sdk/issues", 
+            "title": "\u9700\u8981\u5e2e\u52a9"
+        }, 
+        {
+            "location": "/dev/base-function/", 
+            "text": "\u57fa\u7840\u529f\u80fd\n\n\n\u6ce8\u518c\n\n\n\u6ce8\u518c\u6709\u4e24\u79cd\u65b9\u5f0f\uff0c\u4e00\u79cd\u662f\u7528\u5f00\u53d1\u8005\u5e10\u53f7\u767b\u5f55Fort\u540e\u53f0\u7ba1\u7406\uff0c\u521b\u5efa\u53ef\u767b\u5f55\u7684\u7528\u6237\uff0c\u53e6\u4e00\u79cd\u662f\u901a\u8fc7Fort SDK\u4e2d\u7684FortCrudClient\u5b9e\u73b0\u6ce8\u518c\u7528\u6237\n\n\n\u4f7f\u7528FortCrudClient\u6ce8\u518c\u7528\u6237\n\n\n\u4f7f\u7528FortCrudClient\u6ce8\u518c\u7684\u7528\u6237\u62e5\u6709\u7684\u89d2\u8272\u662f$fort.user.default-roles\uff0c\u7528\u6237\u6240\u5c5e\u7ec4\u662f$fort.user.default-groups\n\n\n@Autowired\nprivate FortCrudClient crudClient;\n\npublic void signUp(String username, String password) {\n    SecurityUser user = new SecurityUser();\n    user.setLogin(username);\n    user.setPasswordHash(password);\n    try{\n        crudClient.signUp(user);    \n    } catch (FortCrudException | IOException e) {\n        // if error call this block\n        e.printStackTrace();\n    }\n}\n\n\n\n\n\u5982\u679c\u521b\u5efa\u7528\u6237\u65f6\u60f3\u4f7f\u7528\u7ed9\u5b9a\u7684\u89d2\u8272\u548c\u7ec4\uff0c\u53ef\u4ee5\u4f7f\u7528signUp(SecurityUser user, String[] roles, String[] groups)\u65b9\u6cd5\n\n\n\u767b\u5f55\n\n\n\u767b\u5f55\u8bf7\u6c42\u7531SecurityHttpFilter\u62e6\u622a\u5e76\u5904\u7406\uff0c\u767b\u5f55\u8bf7\u6c42\u7684\u8bf7\u6c42\u5730\u5740\u662f$fort.authentication.login.url\uff08\u53ea\u652f\u6301POST\u8bf7\u6c42\uff09\uff0c\u7528\u6237\u540d\u7684\u53c2\u6570\u540d\u662ff_username, \u5bc6\u7801\u7684\u53c2\u6570\u540d\u662ff_password. \u63a8\u8350\u4f7f\u7528post\u8bf7\u6c42\n\n\n\n\n\u767b\u5f55\u6210\u529f\u91cd\u5b9a\u5411\u5230$fort.authentication.login.success-return, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n\n\n\u767b\u5f55\u5931\u8d25\u91cd\u5b9a\u5411\u5230$fort.authentication.login.error-return, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001error_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n\n\n\n\nform action=\n$fort.authentication.login.url\n method=\npost\n\n    \ndiv\n\n        \u7528\u6237\u540d: \ninput type=\ntext\n name=\nf_username\n\n    \n/div\n\n    \ndiv\n\n        \u5bc6\u7801: \ninput type=\npassword\n name=\nf_password\n\n    \n/div\n\n    \nbutton type=\nsubmit\n name=\nbutton\n\u6ce8\u518c\n/button\n\n\n/form\n\n\n\n\n\n\u767b\u51fa\n\n\n\u767b\u51fa\u8bf7\u6c42\u7531SecurityHttpFilter\u62e6\u622a\u5e76\u5904\u7406\uff0c\u767b\u51fa\u8bf7\u6c42\u7684\u8bf7\u6c42\u5730\u5740\u662f$fort.authentication.logout.url; \u767b\u51fa\u65f6\u6e05\u9664FUSERTOKEN\u5e76\u5c06\u670d\u52a1\u5668\u4e0a\u7684TOKEN\u8bbe\u7f6e\u4e3a\u8fc7\u671f\uff0c\u767b\u51fa\u6210\u529f\n\n\n\n\n\u767b\u5f55\u6210\u529f\u91cd\u5b9a\u5411\u5230$fort.authentication.logout.success-return, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740\n\n\n\n\na href=\n$fort.authentication.logout.url\n\u767b\u51fa\n/a\n\n\n\n\n\n\u91cd\u7f6e\u7528\u6237\u5bc6\u7801\n\n\n\u91cd\u7f6e\u7528\u6237\u5bc6\u7801\u6709\u4e24\u79cd\u65b9\u5f0f\uff0c\u4e00\u79cd\u662f\u7528\u5f00\u53d1\u8005\u5e10\u53f7\u767b\u5f55Fort\u540e\u53f0\u7ba1\u7406\uff0c\u91cd\u7f6e\u5bc6\u7801\uff0c\u53e6\u4e00\u79cd\u662f\u901a\u8fc7Fort SDK\u4e2d\u7684FortCrudClient\u5b9e\u73b0\u5bc6\u7801\u91cd\u7f6e\n\n\n\u4f7f\u7528FortCrudClient\u91cd\u7f6e\u5bc6\u7801\n\n\n\u91cd\u7f6e\u5bc6\u7801\u65f6\u65e0\u9700\u9a8c\u8bc1\uff0c\u5982\u679c\u5e94\u7528\u81ea\u5df1\u9700\u8981\u53d1\u9001\u77ed\u4fe1\u9a8c\u8bc1\u7801\u7b49\u9a8c\u8bc1\uff0c\u8bf7\u81ea\u5df1\u7f16\u5199\u76f8\u5e94\u903b\u8f91\n\n\n@Autowired\nprivate FortCrudClient crudClient;\n\npublic void resetPassword(String username, String newPassword) {\n    SecurityUser user = new SecurityUser();\n    user.setLogin(username);\n    user.setPasswordHash(newPassword);\n    try{\n        crudClient.resetPassword(user);\n    } catch (FortCrudException | IOException e) {\n        // if error call this block\n        e.printStackTrace();\n    }\n}\n\n\n\n\n\u91cd\u7f6e\u5f53\u524d\u767b\u5f55\u7528\u6237\u5bc6\u7801\u4f7f\u7528crudClient.changeCurrentUserPassword(String newPassword)\n\n\n\u5bfc\u822a\u680f\u6743\u9650\u63a7\u5236\n\n\n\u4f7f\u7528\nSecurityUtils\n\u83b7\u5f97\n\n\nSecurityUtils.getCurrentUserTreeSecurityNavs();\n\n\n\n\n\u6743\u9650\u63a7\u5236\u56fe\u89e3\n\n\n\u7528\u6237\u7684\u6743\u9650\u4fe1\u606f\u7684\u552f\u4e00\u6807\u8bc6\u4fdd\u5b58\u5728Cookie\u4e2d\uff0c\u5c5e\u6027\u540d\u4e3aFUSERTOKEN\uff0c\u6709\u6548\u671f\u4e3a7\u5929.", 
+            "title": "\u57fa\u7840\u529f\u80fd"
+        }, 
+        {
+            "location": "/dev/base-function/#_1", 
+            "text": "", 
+            "title": "\u57fa\u7840\u529f\u80fd"
+        }, 
+        {
+            "location": "/dev/base-function/#_2", 
+            "text": "\u6ce8\u518c\u6709\u4e24\u79cd\u65b9\u5f0f\uff0c\u4e00\u79cd\u662f\u7528\u5f00\u53d1\u8005\u5e10\u53f7\u767b\u5f55Fort\u540e\u53f0\u7ba1\u7406\uff0c\u521b\u5efa\u53ef\u767b\u5f55\u7684\u7528\u6237\uff0c\u53e6\u4e00\u79cd\u662f\u901a\u8fc7Fort SDK\u4e2d\u7684FortCrudClient\u5b9e\u73b0\u6ce8\u518c\u7528\u6237", 
+            "title": "\u6ce8\u518c"
+        }, 
+        {
+            "location": "/dev/base-function/#fortcrudclient", 
+            "text": "\u4f7f\u7528FortCrudClient\u6ce8\u518c\u7684\u7528\u6237\u62e5\u6709\u7684\u89d2\u8272\u662f$fort.user.default-roles\uff0c\u7528\u6237\u6240\u5c5e\u7ec4\u662f$fort.user.default-groups  @Autowired\nprivate FortCrudClient crudClient;\n\npublic void signUp(String username, String password) {\n    SecurityUser user = new SecurityUser();\n    user.setLogin(username);\n    user.setPasswordHash(password);\n    try{\n        crudClient.signUp(user);    \n    } catch (FortCrudException | IOException e) {\n        // if error call this block\n        e.printStackTrace();\n    }\n}  \u5982\u679c\u521b\u5efa\u7528\u6237\u65f6\u60f3\u4f7f\u7528\u7ed9\u5b9a\u7684\u89d2\u8272\u548c\u7ec4\uff0c\u53ef\u4ee5\u4f7f\u7528signUp(SecurityUser user, String[] roles, String[] groups)\u65b9\u6cd5", 
+            "title": "\u4f7f\u7528FortCrudClient\u6ce8\u518c\u7528\u6237"
+        }, 
+        {
+            "location": "/dev/base-function/#_3", 
+            "text": "\u767b\u5f55\u8bf7\u6c42\u7531SecurityHttpFilter\u62e6\u622a\u5e76\u5904\u7406\uff0c\u767b\u5f55\u8bf7\u6c42\u7684\u8bf7\u6c42\u5730\u5740\u662f$fort.authentication.login.url\uff08\u53ea\u652f\u6301POST\u8bf7\u6c42\uff09\uff0c\u7528\u6237\u540d\u7684\u53c2\u6570\u540d\u662ff_username, \u5bc6\u7801\u7684\u53c2\u6570\u540d\u662ff_password. \u63a8\u8350\u4f7f\u7528post\u8bf7\u6c42   \u767b\u5f55\u6210\u529f\u91cd\u5b9a\u5411\u5230$fort.authentication.login.success-return, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740  \u767b\u5f55\u5931\u8d25\u91cd\u5b9a\u5411\u5230$fort.authentication.login.error-return, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001error_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740   form action= $fort.authentication.login.url  method= post \n     div \n        \u7528\u6237\u540d:  input type= text  name= f_username \n     /div \n     div \n        \u5bc6\u7801:  input type= password  name= f_password \n     /div \n     button type= submit  name= button \u6ce8\u518c /button  /form", 
+            "title": "\u767b\u5f55"
+        }, 
+        {
+            "location": "/dev/base-function/#_4", 
+            "text": "\u767b\u51fa\u8bf7\u6c42\u7531SecurityHttpFilter\u62e6\u622a\u5e76\u5904\u7406\uff0c\u767b\u51fa\u8bf7\u6c42\u7684\u8bf7\u6c42\u5730\u5740\u662f$fort.authentication.logout.url; \u767b\u51fa\u65f6\u6e05\u9664FUSERTOKEN\u5e76\u5c06\u670d\u52a1\u5668\u4e0a\u7684TOKEN\u8bbe\u7f6e\u4e3a\u8fc7\u671f\uff0c\u767b\u51fa\u6210\u529f   \u767b\u5f55\u6210\u529f\u91cd\u5b9a\u5411\u5230$fort.authentication.logout.success-return, \u767b\u5f55\u7684\u65f6\u5019\u53ef\u4ee5\u53d1\u9001success_return\u53c2\u6570\u6765\u4e34\u65f6\u6539\u53d8\u8fd9\u4e2a\u5730\u5740   a href= $fort.authentication.logout.url \u767b\u51fa /a", 
+            "title": "\u767b\u51fa"
+        }, 
+        {
+            "location": "/dev/base-function/#_5", 
+            "text": "\u91cd\u7f6e\u7528\u6237\u5bc6\u7801\u6709\u4e24\u79cd\u65b9\u5f0f\uff0c\u4e00\u79cd\u662f\u7528\u5f00\u53d1\u8005\u5e10\u53f7\u767b\u5f55Fort\u540e\u53f0\u7ba1\u7406\uff0c\u91cd\u7f6e\u5bc6\u7801\uff0c\u53e6\u4e00\u79cd\u662f\u901a\u8fc7Fort SDK\u4e2d\u7684FortCrudClient\u5b9e\u73b0\u5bc6\u7801\u91cd\u7f6e", 
+            "title": "\u91cd\u7f6e\u7528\u6237\u5bc6\u7801"
+        }, 
+        {
+            "location": "/dev/base-function/#fortcrudclient_1", 
+            "text": "\u91cd\u7f6e\u5bc6\u7801\u65f6\u65e0\u9700\u9a8c\u8bc1\uff0c\u5982\u679c\u5e94\u7528\u81ea\u5df1\u9700\u8981\u53d1\u9001\u77ed\u4fe1\u9a8c\u8bc1\u7801\u7b49\u9a8c\u8bc1\uff0c\u8bf7\u81ea\u5df1\u7f16\u5199\u76f8\u5e94\u903b\u8f91  @Autowired\nprivate FortCrudClient crudClient;\n\npublic void resetPassword(String username, String newPassword) {\n    SecurityUser user = new SecurityUser();\n    user.setLogin(username);\n    user.setPasswordHash(newPassword);\n    try{\n        crudClient.resetPassword(user);\n    } catch (FortCrudException | IOException e) {\n        // if error call this block\n        e.printStackTrace();\n    }\n}  \u91cd\u7f6e\u5f53\u524d\u767b\u5f55\u7528\u6237\u5bc6\u7801\u4f7f\u7528crudClient.changeCurrentUserPassword(String newPassword)", 
+            "title": "\u4f7f\u7528FortCrudClient\u91cd\u7f6e\u5bc6\u7801"
+        }, 
+        {
+            "location": "/dev/base-function/#_6", 
+            "text": "\u4f7f\u7528 SecurityUtils \u83b7\u5f97  SecurityUtils.getCurrentUserTreeSecurityNavs();", 
+            "title": "\u5bfc\u822a\u680f\u6743\u9650\u63a7\u5236"
+        }, 
+        {
+            "location": "/dev/base-function/#_7", 
+            "text": "\u7528\u6237\u7684\u6743\u9650\u4fe1\u606f\u7684\u552f\u4e00\u6807\u8bc6\u4fdd\u5b58\u5728Cookie\u4e2d\uff0c\u5c5e\u6027\u540d\u4e3aFUSERTOKEN\uff0c\u6709\u6548\u671f\u4e3a7\u5929.", 
+            "title": "\u6743\u9650\u63a7\u5236\u56fe\u89e3"
+        }, 
+        {
+            "location": "/dev/embed/", 
+            "text": "\u5d4c\u5165Fort\u540e\u53f0\u7ba1\u7406\n\n\n\u5d4c\u5165Fort\u540e\u53f0\u7ba1\u7406\u5230\u4f60\u7684\u5e94\u7528\u4e2d\uff0c\u5373\u53ef\u5b9e\u73b0\u5728\u4f60\u7684\u5e94\u7528\u540e\u53f0\u65e0\u7f1d\u7ba1\u7406\u6743\u9650\n\n\n\u76ee\u524d\u5d4c\u5165\u529f\u80fd\u6709\u5de8\u5927\u5b89\u5168\u98ce\u9669\uff0c\u53ef\u80fd\u5bfc\u81f4\u60a8\u7684App Key, App Secret\u6cc4\u9732, \u8bf7\u8c28\u614e\u4f7f\u7528\u5728\u751f\u4ea7\u73af\u5883\u4e2d\n\n\n\u5d4c\u5165\u65b9\u6cd5\n\n\n\u4f7f\u7528iframe\u5d4c\u5165\uff0c\u5d4c\u5165\u65f6\u81ea\u52a8\u9690\u85cfnavbar, sidebar, footer\n\n\n \niframe src=\nhttp://$fort.app.server-base/#/embed?u=user\np=user\nm=security-resource-entity\n width=\n1366\n height=\n768\n/iframe\n\n\n\n\n\n\u53c2\u6570\u8bf4\u660e\n\n\n\u6240\u6709\u53c2\u6570\u5747\u4e3a\u5fc5\u586b\uff01\n\n\n\n\n\n\n\n\n\u53c2\u6570\u540d\n\n\n\u63cf\u8ff0\n\n\n\n\n\n\n\n\n\n\nu\n\n\nUsername\uff0cApp Key\n\n\n\n\n\n\np\n\n\nPassword\uff0cApp Secret\n\n\n\n\n\n\nm\n\n\nModel, \u5d4c\u5165\u7684\u6a21\u5757\u540d\n\n\n\n\n\n\n\n\n\u6a21\u5757\u8bf4\u660e\n\n\n\n\n\n\n\n\n\u6a21\u5757\u540d\n\n\n\u63cf\u8ff0\n\n\n\n\n\n\n\n\n\n\nsecurity-resource-entity\n\n\n\u8d44\u6e90\u7ba1\u7406\n\n\n\n\n\n\nsecurity-nav\n\n\n\u5bfc\u822a\u680f\u7ba1\u7406\n\n\n\n\n\n\nsecurity-authority\n\n\n\u6743\u9650\u7ba1\u7406\n\n\n\n\n\n\nsecurity-role\n\n\n\u89d2\u8272\u7ba1\u7406\n\n\n\n\n\n\nsecurity-group\n\n\n\u7ec4\u7ba1\u7406\n\n\n\n\n\n\nsecurity-user\n\n\n\u7528\u6237\u7ba1\u7406", 
+            "title": "\u5d4c\u5165Fort\u540e\u53f0\u7ba1\u7406"
+        }, 
+        {
+            "location": "/dev/embed/#fort", 
+            "text": "\u5d4c\u5165Fort\u540e\u53f0\u7ba1\u7406\u5230\u4f60\u7684\u5e94\u7528\u4e2d\uff0c\u5373\u53ef\u5b9e\u73b0\u5728\u4f60\u7684\u5e94\u7528\u540e\u53f0\u65e0\u7f1d\u7ba1\u7406\u6743\u9650  \u76ee\u524d\u5d4c\u5165\u529f\u80fd\u6709\u5de8\u5927\u5b89\u5168\u98ce\u9669\uff0c\u53ef\u80fd\u5bfc\u81f4\u60a8\u7684App Key, App Secret\u6cc4\u9732, \u8bf7\u8c28\u614e\u4f7f\u7528\u5728\u751f\u4ea7\u73af\u5883\u4e2d", 
+            "title": "\u5d4c\u5165Fort\u540e\u53f0\u7ba1\u7406"
+        }, 
+        {
+            "location": "/dev/embed/#_1", 
+            "text": "\u4f7f\u7528iframe\u5d4c\u5165\uff0c\u5d4c\u5165\u65f6\u81ea\u52a8\u9690\u85cfnavbar, sidebar, footer    iframe src= http://$fort.app.server-base/#/embed?u=user p=user m=security-resource-entity  width= 1366  height= 768 /iframe", 
+            "title": "\u5d4c\u5165\u65b9\u6cd5"
+        }, 
+        {
+            "location": "/dev/embed/#_2", 
+            "text": "\u6240\u6709\u53c2\u6570\u5747\u4e3a\u5fc5\u586b\uff01     \u53c2\u6570\u540d  \u63cf\u8ff0      u  Username\uff0cApp Key    p  Password\uff0cApp Secret    m  Model, \u5d4c\u5165\u7684\u6a21\u5757\u540d", 
+            "title": "\u53c2\u6570\u8bf4\u660e"
+        }, 
+        {
+            "location": "/dev/embed/#_3", 
+            "text": "\u6a21\u5757\u540d  \u63cf\u8ff0      security-resource-entity  \u8d44\u6e90\u7ba1\u7406    security-nav  \u5bfc\u822a\u680f\u7ba1\u7406    security-authority  \u6743\u9650\u7ba1\u7406    security-role  \u89d2\u8272\u7ba1\u7406    security-group  \u7ec4\u7ba1\u7406    security-user  \u7528\u6237\u7ba1\u7406", 
+            "title": "\u6a21\u5757\u8bf4\u660e"
+        }, 
+        {
+            "location": "/api/", 
+            "text": "API\n\n\nFort SDK Java Docs\n\n\n\n\nFortCrudClient\n\n\nSecurityUtils\n\n\nEntities", 
+            "title": "API"
+        }, 
+        {
+            "location": "/api/#api", 
+            "text": "Fort SDK Java Docs   FortCrudClient  SecurityUtils  Entities", 
+            "title": "API"
+        }
+    ]
+}

@@ -2,6 +2,8 @@
 layout: post
 title: My First Post
 author: xpgo
+category: Infor
+tags: [blog, test]
 ---
 
 This is my first post.

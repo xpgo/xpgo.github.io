@@ -3,6 +3,7 @@ layout: page
 title: Articles
 permalink: /articles/
 ---
+
 <!-- Slider Start -->
 <section id="global-header">
   <div class="container">
@@ -16,6 +17,7 @@ permalink: /articles/
     </div>
   </div>
 </section>
+
 {% for post in site.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>

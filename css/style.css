@@ -32,3 +32,85 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+/*---------------------------------------------
+          Search bar
+-----------------------------------------------*/
+
+header .navbar-default .navbar-nav li a {
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+header .navbar-default .navbar-nav li form {
+  color: #333333;
+  padding: 4px 8px;
+  font-size: 15px;
+}
+
+/*---------------------------------------------
+					Categories & Tags
+-----------------------------------------------*/
+
+.tags-expo-list {
+  text-align: center;
+}
+
+.tags-expo-list .post-tag {
+    margin: .2em .3em;
+}
+
+.post-tag:before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+
+.post-tag {
+    display: inline-block;
+    padding: 0 .5rem;
+    background: rgba(106,159,181,0.15);
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: #ddd;
+    font-family: "PT Sans",Helvetica,Arial,sans-serif;
+    font-size: 150%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+a.post-tag:hover {
+  color: #fff;
+}
+
+.tags-expo-block {
+    padding: 40px;
+    width: 100%;
+    min-height: 150px;
+    background-color: white;
+    border-bottom: 1px dotted #ddd;
+}
+
+.tags-expo .tags-expo-section ul li {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    padding: 0 2rem;
+    font-size: 140%;
+}
+
+.tags-expo .tags-expo-section .post-date {
+    display: inline-block;
+    font-size: 80%;
+    color: #9a9a9a;
+    margin: 0;
+    padding: 0;
+}
+
+.tags-expo .tags-expo-section ul {
+    
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 0;
+}

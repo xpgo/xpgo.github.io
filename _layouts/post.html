@@ -2,6 +2,8 @@
 layout: page
 ---
 
+<script defer src="http://ngrok.xscale.cn:8096/js/commento.js"></script>
+
 <div class="post">
   <!-- Wrapper Start -->
   <section id="intro" style="border: 1px dotted #ddd;">
@@ -17,15 +19,14 @@ layout: page
             <p>{{ content }}</p>
           </div>
         </div><!-- .col-md-7 close -->
+        <h4>Comments</h4>
+        <div id="commento"></div>
+        <noscript>Please enable JavaScript to load the comments.</noscript>
       </div>
     </div>
   </section>
 </div>
 
-<div id="commento"></div>
-<script defer src="http://ngrok.xscale.cn:8096/js/commento.js"></script>
-
-<noscript>Please enable JavaScript to load the comments.</noscript>
 
 <!--
 <script data-isso="http://ngrok.xscale.cn:8093"

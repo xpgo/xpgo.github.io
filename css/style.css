@@ -41,6 +41,16 @@ header {
     padding-left: 10px;
 }
 
+.dropdown-menu-item {
+    padding: 5px 0px;
+}
+
+.dropdown-menu-item-mid {
+    padding: 5px 0px;
+    border-top: 1px dotted #ddd;
+}
+
+
 /*---------------------------------------------
           post
 -----------------------------------------------*/

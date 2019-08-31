@@ -23,17 +23,19 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
                 <li><a href="{{ site.baseurl }}/articles">Articles</a></li>
-                <li><a href="{{ site.baseurl }}/category">Categories</a></li>
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                    Messages<b class="caret"></b>
+                    Categories<b class="caret"></b>
                   </a>
                   <div class="dropdown-menu">
-                    <a href="{{ site.baseurl }}/category">All</a>
-                    <div class="dropdown-divider"></div>
-                      {% for tag in site.categories %}
-                      <a href="{{ site.baseurl }}/category#{{ tag[0] | slugify }}">{{ tag[0] }}</a> <br/>
-                      {% endfor %}
+                    <div class="dropdown-menu-item">
+                      <a href="{{ site.baseurl }}/category">All</a>
+                    </div>
+                    {% for tag in site.categories %}
+                    <div class="dropdown-menu-item-mid">
+                    <a href="{{ site.baseurl }}/category#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+                    </div>
+                    {% endfor %}
                   </div>
                 </li>
                 <!--

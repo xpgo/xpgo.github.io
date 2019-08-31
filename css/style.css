@@ -46,7 +46,7 @@ header {
 -----------------------------------------------*/
 
 .post-area {
-  padding: 40px;
+  padding: 30px 10px;
   width: 100%;
   min-height: 150px;
   background-color: white;
@@ -126,7 +126,7 @@ a.post-tag:hover {
 }
 
 .tags-expo-block {
-    padding: 40px;
+    padding: 30px 10px;
     width: 100%;
     min-height: 150px;
     background-color: white;

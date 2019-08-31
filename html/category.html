@@ -23,22 +23,28 @@ permalink: /category/
 </section>
 
 
-<div class="tags-expo">
-  <div class="tags-expo-section">
-    {% for tag in site.categories %}
-    <div class="tags-expo-block">
-        <h2 id="{{ tag[0] | slugify }}"  class="bold">{{ tag[0] }}</h2>
-        <ul class="tags-expo-posts">
-        {% for post in tag[1] %}
-            <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-        <li>
-            {{ post.title }}
-        <small class="post-date">{{ post.date | date_to_string }}</small>
-        </li>
-        </a>
-        {% endfor %}
-        </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="tags-expo">
+        <div class="tags-expo-section">
+          {% for tag in site.categories %}
+          <div class="tags-expo-block">
+              <h2 id="{{ tag[0] | slugify }}"  class="bold">{{ tag[0] }}</h2>
+              <ul class="tags-expo-posts">
+              {% for post in tag[1] %}
+                  <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+              <li>
+                  {{ post.title }}
+              <small class="post-date">{{ post.date | date_to_string }}</small>
+              </li>
+              </a>
+              {% endfor %}
+              </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
-    {% endfor %}
   </div>
 </div>

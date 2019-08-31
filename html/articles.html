@@ -18,12 +18,18 @@ permalink: /articles/
   </div>
 </section>
 
-{% for post in site.posts %}
-<div class="post-area">
-  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-  <p class="post-date">{{ post.date | date_to_long_string }}</p>
-  <p>
-    {{ post.content | strip_html | truncatewords: 50 }}
-  </p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    {% for post in site.posts %}
+    <div class="post-area">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+      <p class="post-date">{{ post.date | date_to_long_string }}</p>
+      <p>
+        {{ post.content | strip_html | truncatewords: 50 }}
+      </p>
+    </div>
+    {% endfor %}
+    </div>
+  </div>
 </div>
-{% endfor %}

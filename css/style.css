@@ -74,7 +74,10 @@ header {
 
 .post #intro .block img {
   padding: 2px;
-  max-width: 100%;
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #intro {

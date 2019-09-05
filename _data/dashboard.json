@@ -3,202 +3,202 @@
 	"items" : [
 		{
 			"alt" : "Baidu",
-			"icon" : "fas fa-search",
+			"icon" : "fa-search",
 			"link" : "https://www.baidu.com/"
 		},
 		{
 			"alt" : "Google",
-			"icon" : "fab fa-google",
+			"icon" : "fa-google",
 			"link" : "https://www.google.md/"
 		},
 		{
 			"alt" : "DuckGo",
-			"icon" : "fas fa-dove",
+			"icon" : "fa-twitter",
 			"link" : "https://duckduckgo.com/"
 		},
 		{
 			"alt" : "Bing",
-			"icon" : "fab fa-windows",
+			"icon" : "fa-windows",
 			"link" : "https://cn.bing.com/"
 		},
 		{
 			"alt" : "Translate",
-			"icon" : "fas fa-language",
+			"icon" : "fa-language",
 			"link" : "https://translate.google.cn/?hl=zh-CN"
 		},
 		{
 			"alt" : "Scholar",
-			"icon" : "fas fa-graduation-cap",
+			"icon" : "fa-graduation-cap",
 			"link" : "https://scholar.google.com.mx/"
 		},
 		{
 			"alt" : "Baidu Map",
-			"icon" : "fas fa-map-marked",
+			"icon" : "fa-map-marker",
 			"link" : "https://map.baidu.com/"
 		},
 		{
 			"alt" : "Huanqiu",
-			"icon" : "fas fa-globe",
+			"icon" : "fa-globe",
 			"link" : "http://www.huanqiu.com/"
 		},
 		{
 			"alt" : "Ifeng",
-			"icon" : "fab fa-phoenix-squadron",
+			"icon" : "fa-newspaper-o",
 			"link" : "http://www.ifeng.com/"
 		},
 		{
 			"alt" : "Jie Mian",
-			"icon" : "far fa-window-restore",
+			"icon" : "fa-square",
 			"link" : "https://www.jiemian.com/"
 		},
 		{
 			"alt" : "Quora",
-			"icon" : "fab fa-quora",
+			"icon" : "fa-question",
 			"link" : "https://www.quora.com/"
 		},
 		{
 			"alt" : "Weibo",
-			"icon" : "fab fa-weibo",
+			"icon" : "fa-weibo",
 			"link" : "https://www.weibo.com/xpect"
 		},
 		{
 			"alt" : "Youtube",
-			"icon" : "fab fa-youtube",
+			"icon" : "fa-video-camera",
 			"link" : "https://www.youtube.com/"
 		},
 		{
 			"alt" : "Youku",
-			"icon" : "far fa-play-circle",
+			"icon" : "fa-play-circle",
 			"link" : "https://www.youku.com/"
 		},
 		{
 			"alt" : "Jing Dong",
-			"icon" : "fas fa-shopping-cart",
+			"icon" : "fa-shopping-cart",
 			"link" : "https://www.jd.com/"
 		},
 		{
 			"alt" : "Tao Bao",
-			"icon" : "fas fa-store-alt",
+			"icon" : "fa-tags",
 			"link" : "https://www.taobao.com/"
 		},
 		{
 			"alt" : "Bai Group",
-			"icon" : "fas fa-users",
+			"icon" : "fa-users",
 			"link" : "http://baiyl.lnm.cn/"
 		},
 		{
 			"alt" : "Office",
-			"icon" : "fas fa-briefcase",
+			"icon" : "fa-briefcase",
 			"link" : "http://oa.imech.ac.cn/web/index.jsp"
 		},
 		{
 			"alt" : "CAS Mail",
-			"icon" : "far fa-envelope",
+			"icon" : "fa-envelope",
 			"link" : "https://mail.cstnet.cn/"
 		},
 		{
 			"alt" : "Web Proxy",
-			"icon" : "fas fa-user-lock",
+			"icon" : "fa-unlock",
 			"link" : "https://www.hidemyass-freeproxy.com/"
 		},
 		{
 			"alt" : "Bookmarks",
-			"icon" : "fas fa-atlas",
+			"icon" : "fa-bookmark",
 			"link" : "http://xpgo.top/buk"
 		},
 		{
 			"alt" : "XPGO Space",
-			"icon" : "fab fa-staylinked",
+			"icon" : "fa-home",
 			"link" : "http://www.xpgo.top"
 		},
 		{
 			"alt" : "NAS xpgo",
-			"icon" : "fas fa-hdd",
+			"icon" : "fa-floppy-o",
 			"link" : "http://xpgo.top/naso"
 		},
 		{
 			"alt" : "NAS vlabs",
-			"icon" : "far fa-hdd",
+			"icon" : "fa-hdd-o",
 			"link" : "http://xpgo.top/nash"
 		},
 		{
 			"alt" : "Leanote",
-			"icon" : "far fa-sticky-note",
+			"icon" : "fa-book",
 			"link" : "http://xpgo.top/note"
 		},
 		{
 			"alt" : "TTRSS",
-			"icon" : "fas fa-rss",
+			"icon" : "fa-rss",
 			"link" : "http://xpgo.top/rss"
 		},
 		{
 			"alt" : "Shiori",
-			"icon" : "far fa-bookmark",
+			"icon" : "fa-bookmark-o",
 			"link" : "http://xpgo.top/shi"
 		},
 		{
 			"alt" : "My Chat",
-			"icon" : "far fa-comment",
+			"icon" : "fa-comment",
 			"link" : "http://xpgo.top/chat"
 		},
 		{
 			"alt" : "XM Blog",
-			"icon" : "far fa-heart",
+			"icon" : "fa-heart-o",
 			"link" : "http://xpgo.top/bxm"
 		},
 		{
 			"alt" : "HASS",
-			"icon" : "fas fa-house-damage",
+			"icon" : "fa-lightbulb-o",
 			"link" : "http://xpgo.top/hass"
 		},
 		{
 			"alt" : "Short X",
-			"icon" : "fas fa-bezier-curve",
+			"icon" : "fa-external-link",
 			"link" : "http://xpgo.top"
 		},
 		{
 			"alt" : "Lychee",
-			"icon" : "far fa-image",
+			"icon" : "fa-image",
 			"link" : "http://xpgo.top/pic"
 		},
 		{
 			"alt" : "Icons 8",
-			"icon" : "far fa-images",
+			"icon" : "fa-flickr",
 			"link" : "https://icons8.cn/"
 		},
 		{
 			"alt" : "Multcloud",
-			"icon" : "fas fa-cloud-download-alt",
+			"icon" : "fa-cloud",
 			"link" : "https://www.multcloud.com/"
 		},
 		{
 			"alt" : "Github",
-			"icon" : "fab fa-github",
+			"icon" : "fa-github",
 			"link" : "https://github.com/xpgo/"
 		},
 		{
 			"alt" : "AS Font",
-			"icon" : "fas fa-font",
+			"icon" : "fa-font",
 			"link" : "https://fontawesocom/icons?from=io"
 		},
 		{
 			"alt" : "Apkpure",
-			"icon" : "fab fa-app-store",
+			"icon" : "fa-download",
 			"link" : "https://apkpure.com"
 		},
 		{
 			"alt" : "DL Droid",
-			"icon" : "fab fa-android",
+			"icon" : "fa-android",
 			"link" : "https://dlandroid.com/"
 		},
 		{
 			"alt" : "Chrome App",
-			"icon" : "fab fa-chrome",
+			"icon" : "fa-cube",
 			"link" : "https://chrogoogle.com/webstore/category/extensions?hl=zh-CN"
 		},
 		{
 			"alt" : "Dial 2",
-			"icon" : "fas fa-th",
+			"icon" : "fa-th",
 			"link" : "https://speeddial2.com/bookmarks"
 		}
 	]

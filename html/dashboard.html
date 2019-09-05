@@ -14,7 +14,7 @@ http://tholman.com/github-corners/ -->
     <div id="itemlist">
         {% for item in site.data.dashboard.items %}
         <a href="{{ item.link }}" title="Item Title">
-            <i class="{{ item.icon }} fa-fw"></i>
+            <span class="{{ item.icon }} fa-fw" style="font-family: FontAwesome;"></span>
             <span class="icon-title">{{ item.alt }}</span>
         </a>
         {% endfor %}

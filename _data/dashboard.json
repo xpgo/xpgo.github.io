@@ -1,0 +1,205 @@
+{
+	"title" : "XPGO's Dashboard",
+	"items" : [
+		{
+			"alt" : "Baidu",
+			"icon" : "fas fa-search",
+			"link" : "https://www.baidu.com/"
+		},
+		{
+			"alt" : "Google",
+			"icon" : "fab fa-google",
+			"link" : "https://www.google.md/"
+		},
+		{
+			"alt" : "DuckGo",
+			"icon" : "fas fa-dove",
+			"link" : "https://duckduckgo.com/"
+		},
+		{
+			"alt" : "Bing",
+			"icon" : "fab fa-windows",
+			"link" : "https://cn.bing.com/"
+		},
+		{
+			"alt" : "Translate",
+			"icon" : "fas fa-language",
+			"link" : "https://translate.google.cn/?hl=zh-CN"
+		},
+		{
+			"alt" : "Scholar",
+			"icon" : "fas fa-graduation-cap",
+			"link" : "https://scholar.google.com.mx/"
+		},
+		{
+			"alt" : "Baidu Map",
+			"icon" : "fas fa-map-marked",
+			"link" : "https://map.baidu.com/"
+		},
+		{
+			"alt" : "Huanqiu",
+			"icon" : "fas fa-globe",
+			"link" : "http://www.huanqiu.com/"
+		},
+		{
+			"alt" : "Ifeng",
+			"icon" : "fab fa-phoenix-squadron",
+			"link" : "http://www.ifeng.com/"
+		},
+		{
+			"alt" : "Jie Mian",
+			"icon" : "far fa-window-restore",
+			"link" : "https://www.jiemian.com/"
+		},
+		{
+			"alt" : "Quora",
+			"icon" : "fab fa-quora",
+			"link" : "https://www.quora.com/"
+		},
+		{
+			"alt" : "Weibo",
+			"icon" : "fab fa-weibo",
+			"link" : "https://www.weibo.com/xpect"
+		},
+		{
+			"alt" : "Youtube",
+			"icon" : "fab fa-youtube",
+			"link" : "https://www.youtube.com/"
+		},
+		{
+			"alt" : "Youku",
+			"icon" : "far fa-play-circle",
+			"link" : "https://www.youku.com/"
+		},
+		{
+			"alt" : "Jing Dong",
+			"icon" : "fas fa-shopping-cart",
+			"link" : "https://www.jd.com/"
+		},
+		{
+			"alt" : "Tao Bao",
+			"icon" : "fas fa-store-alt",
+			"link" : "https://www.taobao.com/"
+		},
+		{
+			"alt" : "Bai Group",
+			"icon" : "fas fa-users",
+			"link" : "http://baiyl.lnm.cn/"
+		},
+		{
+			"alt" : "Office",
+			"icon" : "fas fa-briefcase",
+			"link" : "http://oa.imech.ac.cn/web/index.jsp"
+		},
+		{
+			"alt" : "CAS Mail",
+			"icon" : "far fa-envelope",
+			"link" : "https://mail.cstnet.cn/"
+		},
+		{
+			"alt" : "Web Proxy",
+			"icon" : "fas fa-user-lock",
+			"link" : "https://www.hidemyass-freeproxy.com/"
+		},
+		{
+			"alt" : "Bookmarks",
+			"icon" : "fas fa-atlas",
+			"link" : "http://xpgo.top/buk"
+		},
+		{
+			"alt" : "XPGO Space",
+			"icon" : "fab fa-staylinked",
+			"link" : "http://www.xpgo.top"
+		},
+		{
+			"alt" : "NAS xpgo",
+			"icon" : "fas fa-hdd",
+			"link" : "http://xpgo.top/naso"
+		},
+		{
+			"alt" : "NAS vlabs",
+			"icon" : "far fa-hdd",
+			"link" : "http://xpgo.top/nash"
+		},
+		{
+			"alt" : "Leanote",
+			"icon" : "far fa-sticky-note",
+			"link" : "http://xpgo.top/note"
+		},
+		{
+			"alt" : "TTRSS",
+			"icon" : "fas fa-rss",
+			"link" : "http://xpgo.top/rss"
+		},
+		{
+			"alt" : "Shiori",
+			"icon" : "far fa-bookmark",
+			"link" : "http://xpgo.top/shi"
+		},
+		{
+			"alt" : "My Chat",
+			"icon" : "far fa-comment",
+			"link" : "http://xpgo.top/chat"
+		},
+		{
+			"alt" : "XM Blog",
+			"icon" : "far fa-heart",
+			"link" : "http://xpgo.top/bxm"
+		},
+		{
+			"alt" : "HASS",
+			"icon" : "fas fa-house-damage",
+			"link" : "http://xpgo.top/hass"
+		},
+		{
+			"alt" : "Short X",
+			"icon" : "fas fa-bezier-curve",
+			"link" : "http://xpgo.top"
+		},
+		{
+			"alt" : "Lychee",
+			"icon" : "far fa-image",
+			"link" : "http://xpgo.top/pic"
+		},
+		{
+			"alt" : "Icons 8",
+			"icon" : "far fa-images",
+			"link" : "https://icons8.cn/"
+		},
+		{
+			"alt" : "Multcloud",
+			"icon" : "fas fa-cloud-download-alt",
+			"link" : "https://www.multcloud.com/"
+		},
+		{
+			"alt" : "Github",
+			"icon" : "fab fa-github",
+			"link" : "https://github.com/xpgo/"
+		},
+		{
+			"alt" : "AS Font",
+			"icon" : "fas fa-font",
+			"link" : "https://fontawesocom/icons?from=io"
+		},
+		{
+			"alt" : "Apkpure",
+			"icon" : "fab fa-app-store",
+			"link" : "https://apkpure.com"
+		},
+		{
+			"alt" : "DL Droid",
+			"icon" : "fab fa-android",
+			"link" : "https://dlandroid.com/"
+		},
+		{
+			"alt" : "Chrome App",
+			"icon" : "fab fa-chrome",
+			"link" : "https://chrogoogle.com/webstore/category/extensions?hl=zh-CN"
+		},
+		{
+			"alt" : "Dial 2",
+			"icon" : "fas fa-th",
+			"link" : "https://speeddial2.com/bookmarks"
+		}
+	]
+}

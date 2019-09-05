@@ -64,6 +64,7 @@ a {
 /* link colors */
 #itemlist a {
 	color: #fff;
+  	text-align: center;
 }
 #itemlist a:hover {
 	color: #c4c4c4;

@@ -56,6 +56,10 @@ header .navbar-default .navbar-nav a:hover {
   color: #e32900;
 }
 
+#global-header .block {
+    padding-left: 0; 
+}
+
 /*---------------------------------------------
           post
 -----------------------------------------------*/

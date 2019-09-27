@@ -10,7 +10,6 @@ title: Articles
       <div class="col-md-12">
         <div class="block">
           <h1>Articles</h1>
-          <!-- <p>I can</p> -->
         </div>
       </div>
     </div>
@@ -24,7 +23,7 @@ title: Articles
   {% if post.img %}
     <a class="post-brief-thumbnail" style="background-image: url({{ post.img }})" href="{{post.url | prepend: site.baseurl}}"></a>
   {% else %}
-    <a class="post-brief-thumbnail" style="background-image: url({{"/img/js-1.png" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+    <a class="post-brief-thumbnail" style="background-image: url({{"/img/default-th.png" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
   {% endif %}
   <div class="post-brief-content">
     <h2 class="post-brief-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>

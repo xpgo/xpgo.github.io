@@ -4,6 +4,7 @@ title: 「自建服务」一、开启自建服务之旅
 subtitle: 我们什么要开启自建服务，开启哪些类型的服务，如何开启？
 author: xpgo
 category: Dev
+img: https://ngrok.xscale.cn:8097/images/2019/07/18/e71bb9726a8071c947f393e127211a70.th.jpg
 tags: [blog, dev]
 ---
 

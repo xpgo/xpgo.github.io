@@ -4,10 +4,11 @@ title: 群晖NAS开启SSD缓存后的体验
 subtitle: 在群晖NAS中开启SSD缓存有什么好处，是否值得？
 author: xpgo
 category: Infor
+img: https://ngrok.xscale.cn:8097/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.md.jpg
 tags: [blog, nas]
 ---
 
-![NAS with SSD Cache](https://static.chiphell.com/forum/201801/29/174021brqqm2sx61r4nsxy.jpg)
+![NAS with SSD Cache](https://ngrok.xscale.cn:8097/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.jpg)
 
 我的群晖NAS型号是DS1517+，属于高性能机型，硬件和软件可扩展性都比较强，硬件方面可以通过M2D17或M2D18的卡及两块SSD固态实现SSD缓存功能。软件方面，我在在NAS上安装了Docker，部署了很多网站服务，除了NAS本身自带的文件和照片访问服务外，还通过Docker部署了10+个容器，因此NAS的随机读写量比较大。
 

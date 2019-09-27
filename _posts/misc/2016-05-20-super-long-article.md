@@ -4,6 +4,7 @@ title: "Some articles are just so long they deserve a really long title to see i
 subtitle: "Some articles are just so long they deserve a really long title to see if things will break well"
 author: xpgo
 category: Misc
+img: https://ngrok.xscale.cn:8097/images/2019/08/17/fb6af53f452a2ef2dcef26b9d36c4203.md.jpg
 tags: [blog, test]
 ---
 

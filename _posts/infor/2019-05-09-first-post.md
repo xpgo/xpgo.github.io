@@ -4,7 +4,7 @@ title: My First Post
 subtitle: For memory of my first post.
 author: xpgo
 category: Infor
-img: https://ngrok.xscale.cn:8097/images/2019/07/17/6742210380f797b6c527fdfaa1084f7a.th.jpg
+img: https://ngrok.xscale.cn:8097/images/2019/07/17/6742210380f797b6c527fdfaa1084f7a.md.jpg
 tags: [blog, test]
 ---
 

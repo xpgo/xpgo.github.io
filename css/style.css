@@ -334,6 +334,7 @@ a.post-tag:hover {
     width: 48%;
     max-width: 100%;
     margin: 0 0.9% 1.5%;
+    margin-top: 2.5%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

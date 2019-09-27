@@ -62,11 +62,20 @@ title: Articles
           <a class="page-link"  href="{{ site.baseurl }}/articles">First</a>
         </li>
         
+        {% if paginator.previous_page == 1 %}
+        <li class="page-item">
+          <a class="page-link" aria-label="Previous" href="{{ site.baseurl }}/articles/">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+          </a>
+        </li>
+        {% else %}
         <li class="page-item">
           <a class="page-link" aria-label="Previous" href="{{ site.baseurl }}/articles/page{{ paginator.previous_page }}/">
             <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
           </a>
         </li>
+        {% endif %}
+        
       {% endif %}
       
       <li class="page-item active">

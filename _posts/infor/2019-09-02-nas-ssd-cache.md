@@ -4,7 +4,7 @@ title: 群晖NAS开启SSD缓存后的体验
 subtitle: 在群晖NAS中开启SSD缓存有什么好处，是否值得？
 author: xpgo
 category: Infor
-img: https://ngrok.xscale.cn:8097/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.md.jpg
+img: https://ngrok.xscale.cn:8097/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.th.jpg
 tags: [blog, nas]
 ---
 

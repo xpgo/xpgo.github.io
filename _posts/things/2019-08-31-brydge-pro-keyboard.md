@@ -4,7 +4,7 @@ title: Brydge Pro Keyboard
 subtitle: Review - The Brydge Pro Keyboard for iPad Offers a MacBook-Like Experience
 author: Clover
 category: Things
-img: https://ngrok.xscale.cn:8097/images/2019/09/27/edc86aa43cfe7b52319372da71cd6cf0.th.jpg
+img: https://ngrok.xscale.cn:8097/images/2019/09/27/edc86aa43cfe7b52319372da71cd6cf0.md.jpg
 tags: [ipad, keyboard]
 ---
 

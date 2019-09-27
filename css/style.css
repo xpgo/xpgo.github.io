@@ -189,6 +189,13 @@ header .navbar-default .navbar-nav li form {
   padding-right: .5em;
 }
 
+.tags-expo-block h2:before {
+  content: "\f02b";
+  font-family: FontAwesome;
+  color: #e32900;
+  padding-right: .5em;
+}
+
 .post-tag {
   display: inline-block;
   padding: 0 .5rem;

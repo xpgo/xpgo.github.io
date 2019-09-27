@@ -1,0 +1,90 @@
+---
+layout: page
+title: Articles
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Articles</h1>
+          <!-- <p>I can</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+{% for post in paginator.posts %}
+<article class="post-brief">
+  {% if post.img %}
+    <a class="post-brief-thumbnail" style="background-image: url({{ post.img }})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+    <a class="post-brief-thumbnail" style="background-image: url({{"/img/js-1.png" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% endif %}
+  <div class="post-brief-content">
+    <h2 class="post-brief-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncate: 200 }}</p>
+    <span class="post-brief-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-brief-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+  </div>
+</article>
+{% endfor %}
+</div>
+
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    {% for post in paginator.posts %}
+    <div class="post-area">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
+      <p class="post-date">{{ post.date | date_to_long_string }}</p>
+      <p>
+        {{ post.content | strip_html | truncate: 300 }}
+      </p>
+    </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+-->
+
+<div class="container text-center">
+  <nav class="pagination" role="pagination">
+    <ul class="pagination pg-blue navbar-nav justified">
+
+      {% if paginator.previous_page %}
+        <li class="page-item">
+          <a class="page-link"  href="{{ site.baseurl }}/articles">First</a>
+        </li>
+        
+        <li class="page-item">
+          <a class="page-link" aria-label="Previous" href="{{ site.baseurl }}/articles/page{{ paginator.previous_page }}/">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+          </a>
+        </li>
+      {% endif %}
+      
+      <li class="page-item active">
+        <a class="page-link"> {{paginator.page}} / {{paginator.total_pages}}</a>
+      </li>
+
+      {% if paginator.next_page %}
+        <li class="page-item">
+          <a class="page-link" aria-label="Next" href="{{ site.baseurl }}/articles/page{{ paginator.next_page }}/">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        
+        <li class="page-item">
+          <a class="page-link"  href="{{ site.baseurl }}/articles/page{{ paginator.total_pages }}">Last</a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>

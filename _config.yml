@@ -27,6 +27,12 @@ logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-paginate
+
+# Pagination
+paginate: 6
+paginate_path: "articles/page:num"
 
 # Google analytics
 # ga_tracking_id: "UA-39615615-2"

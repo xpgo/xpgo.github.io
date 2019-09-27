@@ -4,6 +4,7 @@ title: MIT研究出「最黑黑科技」，居然还是个意外？
 subtitle: 世界上最黑的材质，吸收光的能力达到了99.995%。
 author: ifanr
 category: Infor
+img: https://ngrok.xscale.cn:8097/images/2019/09/17/e7b655ac19a41d90076578b37b3fe938.md.jpg
 tags: [infor]
 ---
 

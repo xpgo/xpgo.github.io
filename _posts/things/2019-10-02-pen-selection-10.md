@@ -2,7 +2,7 @@
 layout: post
 title: 好写又不贵，适合反复回购的 10 款水笔推荐
 author: sspai
-url: https://sspai.com/post/56047
+img: https://ngrok.xscale.cn:8097/images/2019/10/02/017b8f99de0a1040357349f09289fefb.md.jpg
 category: Things
 tags: [pen]
 ---

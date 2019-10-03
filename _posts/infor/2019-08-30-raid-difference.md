@@ -4,11 +4,11 @@ title: 「转」RAID0、RAID1及RAID5的区别详解
 subtitle: 图文介绍RAID0、RAID1及RAID5的区别
 author: xpgo
 category: Infor
-img: https://ngrok.xscale.cn:8097/images/2019/09/02/e9efb80f1b8a0b25e73d608a5985eaa2.md.jpg
+img: https://at.xpect.cn:97/images/2019/09/02/e9efb80f1b8a0b25e73d608a5985eaa2.md.jpg
 tags: [blog, nas]
 ---
 
-![e9efb80f1b8a0b25e73d608a5985eaa2.jpg](https://ngrok.xscale.cn:8097/images/2019/09/02/e9efb80f1b8a0b25e73d608a5985eaa2.jpg)
+![e9efb80f1b8a0b25e73d608a5985eaa2.jpg](https://at.xpect.cn:97/images/2019/09/02/e9efb80f1b8a0b25e73d608a5985eaa2.jpg)
 
 版权声明：本文为CSDN博主「Mr_JWYang」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/Mr_Yang__/article/details/85228465

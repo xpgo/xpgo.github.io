@@ -4,11 +4,11 @@ title: 群晖NAS开启SSD缓存后的体验
 subtitle: 在群晖NAS中开启SSD缓存有什么好处，是否值得？
 author: xpgo
 category: Infor
-img: https://ngrok.xscale.cn:8097/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.md.jpg
+img: https://at.xpect.cn:97/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.md.jpg
 tags: [blog, nas]
 ---
 
-![NAS with SSD Cache](https://ngrok.xscale.cn:8097/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.jpg)
+![NAS with SSD Cache](https://at.xpect.cn:97/images/2019/09/27/91ffba35633de7235c71652ae2ec629a.jpg)
 
 我的群晖NAS型号是DS1517+，属于高性能机型，硬件和软件可扩展性都比较强，硬件方面可以通过M2D17或M2D18的卡及两块SSD固态实现SSD缓存功能。软件方面，我在在NAS上安装了Docker，部署了很多网站服务，除了NAS本身自带的文件和照片访问服务外，还通过Docker部署了10+个容器，因此NAS的随机读写量比较大。
 
@@ -38,13 +38,13 @@ tags: [blog, nas]
 
 安装SSD缓存之后最让我满意的是，机械硬盘的访问量降低了很多，很少听见咯咯的声响了，硬盘的灯也不再频繁闪烁了。这是因为很多网络服务的常用文件都被自动放到SSD缓存上了，几天下来缓存命中率高达99%，可以说利用率非常高，很值。
 
-![SSD Cache hit rate](https://ngrok.xscale.cn:8097/images/2019/09/04/f75781803453869bb4348b720fd44f9f.jpg)
+![SSD Cache hit rate](https://at.xpect.cn:97/images/2019/09/04/f75781803453869bb4348b720fd44f9f.jpg)
 
 ### HDD访问频率明显降低
 
 从存储空间的利用率可以看到，安装了SSD缓存之后，利用率明显降低了，整体的读传输速率提高了近3倍，写的传输速率提高了近1倍，当然这些改进对于网络服务而言没有明显的感觉，主要会对机械硬盘的寿命有所提升，当然是这是牺牲SSD的所花的钱得来的。
 
-![SSD Cache HDD usage](https://ngrok.xscale.cn:8097/images/2019/09/04/eb26b24b4485de60b286e07eb473bbb4.jpg)
+![SSD Cache HDD usage](https://at.xpect.cn:97/images/2019/09/04/eb26b24b4485de60b286e07eb473bbb4.jpg)
 
 ## 值不值得升级SSD缓存？
 

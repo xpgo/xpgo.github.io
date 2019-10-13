@@ -2,7 +2,7 @@
 layout: post
 title: 无线降噪耳机怎么选？这里有一份最全面的选购方案
 author: ifanr
-img: https://at.xpect.cn:97/images/2019/10/02/a9223da74f82eb1cd619608c9e1eca6c.md.jpg
+img: https://on.xhost.top:97/images/2019/10/02/a9223da74f82eb1cd619608c9e1eca6c.md.jpg
 category: Things
 tags: [earpods]
 ---

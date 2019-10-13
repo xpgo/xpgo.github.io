@@ -4,11 +4,11 @@ title: 美国华裔交通部长赵小兰致孩子们的人生感悟
 subtitle: 美国华裔交通部长赵小兰致孩子们的人生感悟演讲，用于英语学习的素材。
 author: xpgo
 category: Fun
-img: https://at.xpect.cn:97/images/2019/09/27/7d883a5008aff85bae851b5c440dd990.md.jpg
+img: https://on.xhost.top:97/images/2019/09/27/7d883a5008aff85bae851b5c440dd990.md.jpg
 tags: [talk, english]
 ---
 
-![Elaine L. Chao](https://at.xpect.cn:97/images/2019/09/27/7d883a5008aff85bae851b5c440dd990.jpg)
+![Elaine L. Chao](https://on.xhost.top:97/images/2019/09/27/7d883a5008aff85bae851b5c440dd990.jpg)
 
 这段演讲是现任美国交通部长的赵小兰（Elaine L. Chao），给孩子们的演讲，是比较好的英语学习材料。
 

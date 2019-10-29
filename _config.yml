@@ -31,7 +31,7 @@ plugins:
   - jekyll-paginate
 
 # Pagination
-paginate: 6
+paginate: 10
 paginate_path: "articles/page:num"
 
 # Google analytics

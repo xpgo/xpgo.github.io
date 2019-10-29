@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 美国华裔交通部长赵小兰致孩子们的人生感悟
-subtitle: 美国华裔交通部长赵小兰致孩子们的人生感悟演讲，用于英语学习的素材。
+title: A talk by Elaine L. Chao to Children
+subtitle: Good material for English learning.
 author: xpgo
 category: Fun
 img: https://on.xhost.top:97/images/2019/09/27/7d883a5008aff85bae851b5c440dd990.md.jpg
@@ -10,13 +10,13 @@ tags: [talk, english]
 
 ![Elaine L. Chao](https://on.xhost.top:97/images/2019/09/27/7d883a5008aff85bae851b5c440dd990.jpg)
 
-这段演讲是现任美国交通部长的赵小兰（Elaine L. Chao），给孩子们的演讲，是比较好的英语学习材料。
+This talk is given by Elaine L. Chao who is the United States Secretary of Transportation. 
 
-## 音频地址
+## Voice Link
 
-- 喜马拉雅：[链接地址](https://www.ximalaya.com/waiyu/14216403/76510675)
+- XiMaLaYa FM：[Link Address](https://www.ximalaya.com/waiyu/14216403/76510675)
 
-## 英文原文
+## Script in English
 
 **Dear children**,
 

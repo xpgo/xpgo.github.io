@@ -79,6 +79,9 @@ cd /f/Github
 # clone from git, install git with pacman if you have not
 git clone https://github.com/petsc/petsc.git
 
+# in config/configure.py, if you are using MSYS2 instead of Cygwin, comment out the line:
+# chkdosfiles()
+
 # goto the PETSc dir
 cd /f/Github/petsc
 export PETSC_DIR=`pwd`
